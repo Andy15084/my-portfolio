@@ -121,7 +121,7 @@ export default function Home() {
             <div className="order-1 md:order-2 flex justify-center">
               <div className="relative w-80 h-[32rem] rounded-2xl overflow-hidden border-2 border-[var(--accent-green)] shadow-lg shadow-[var(--accent-green)]/10">
                 <Image
-                  src="/images/profile.png"
+                  src="/images/profile.jpg"
                   alt="Andrej Paulicka"
                   fill
                   priority
