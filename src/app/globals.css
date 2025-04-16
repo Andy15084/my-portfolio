@@ -1,0 +1,198 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+  --accent-green: #00ff9d;
+  --space-blue: #0a192f;
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-roboto-mono);
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth bg-[var(--space-blue)];
+  }
+  
+  body {
+    @apply text-gray-300 min-h-screen overflow-x-hidden;
+    background: linear-gradient(to bottom, var(--space-blue), black);
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply text-gray-300 hover:text-[var(--accent-green)] transition-colors duration-300;
+  }
+  
+  .btn-primary {
+    @apply bg-[var(--accent-green)] text-black font-medium px-8 py-3 rounded-full text-lg
+    hover:bg-opacity-90 hover:scale-105 hover:shadow-lg hover:shadow-[#00ff9d]/20 
+    transition-all duration-300;
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent border-2 border-[var(--accent-green)] text-[var(--accent-green)] 
+    font-medium px-8 py-3 rounded-full text-lg hover:bg-[var(--accent-green)] hover:text-black 
+    hover:scale-105 hover:shadow-lg hover:shadow-[#00ff9d]/20 
+    transition-all duration-300;
+  }
+  
+  .section-title {
+    @apply text-4xl md:text-5xl font-bold mb-12 text-[var(--accent-green)] tracking-tight;
+  }
+  
+  .card {
+    @apply bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 
+    hover:border-[var(--accent-green)] transition-all duration-300;
+  }
+}
+
+/* Solar System Styles */
+.solar-system {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.sun {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, #ffd700 0%, #ff8c00 100%);
+  border-radius: 50%;
+  box-shadow: 0 0 50px #ff8c00;
+  animation: pulse 4s infinite alternate;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.orbit {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mercury-orbit {
+  width: 200px;
+  height: 200px;
+  animation: rotate 4s linear infinite;
+}
+
+.venus-orbit {
+  width: 300px;
+  height: 300px;
+  animation: rotate 8s linear infinite;
+}
+
+.earth-orbit {
+  width: 400px;
+  height: 400px;
+  animation: rotate 12s linear infinite;
+}
+
+.mars-orbit {
+  width: 500px;
+  height: 500px;
+  animation: rotate 16s linear infinite;
+}
+
+.planet {
+  position: absolute;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.mercury {
+  width: 10px;
+  height: 10px;
+  background: #b6b6b6;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.venus {
+  width: 15px;
+  height: 15px;
+  background: #e39e1c;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.earth {
+  width: 20px;
+  height: 20px;
+  background: #2a82d4;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mars {
+  width: 18px;
+  height: 18px;
+  background: #c1440e;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 2s infinite alternate;
+  z-index: 0;
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  from {
+    box-shadow: 0 0 50px #ff8c00;
+  }
+  to {
+    box-shadow: 0 0 100px #ff8c00;
+  }
+}
+
+@keyframes twinkle {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
