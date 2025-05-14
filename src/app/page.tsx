@@ -62,6 +62,35 @@ export default function Home() {
       <SolarSystem />
       <HeroSection />
       
+      {/* Header Section */}
+      <header className="min-h-screen flex items-center justify-center relative z-10">
+        <div className="text-center px-4 sm:px-6 lg:px-8">
+          <div className="relative w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden border-4 border-[var(--accent-green)]">
+            <Image
+              src="/images/profile.jpg"
+              alt="NextLayer Studio Logo"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 text-white">
+            NextLayer Studio
+          </h1>
+          <p className="text-xl sm:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            Crafting modern web experiences with cutting-edge technology
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#contact" className="btn-primary">
+              Get in Touch
+            </a>
+            <a href="#projects" className="btn-secondary">
+              View Our Work
+            </a>
+          </div>
+        </div>
+      </header>
+
       {/* About Section */}
       <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-6xl mx-auto">
