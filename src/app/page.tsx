@@ -65,36 +65,30 @@ export default function Home() {
       {/* About Section */}
       <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-6xl mx-auto">
-          <h2 className="section-title text-center">About Me</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div className="order-2 md:order-1">
+          <h2 className="section-title text-center">About NextLayer Studio</h2>
+          <div className="grid grid-cols-1 gap-8 items-center">
+            <div>
               <p className="text-gray-300 mb-4 text-lg leading-relaxed">
-                I&apos;m a passionate Full-Stack Developer with a keen eye for design.
-                With expertise in both frontend and backend technologies, I create
-                seamless digital experiences that users love.
+                NextLayer Studio is a dynamic web development company specializing in creating modern, 
+                responsive, and user-friendly websites and web applications. We combine technical expertise 
+                with creative design to deliver digital solutions that help businesses thrive in the online world.
               </p>
               <p className="text-gray-300 mb-4 text-lg leading-relaxed">
-                I began programming seriously in high school, where I quickly learned the 
-                fundamentals of logical programming in Python. Later on, I became very 
-                interested in creating websites using languages like HTML, PHP, and JavaScript, 
-                but I soon realized these technologies are outdated for today&apos;s demands. 
-                That&apos;s why I started focusing more on Next.js and building modern, 
-                performant websites with it.
+                Our team of skilled developers and designers is passionate about crafting unique digital 
+                experiences that not only look stunning but also perform exceptionally well. We believe in 
+                staying at the forefront of web technologies, utilizing frameworks like Next.js to build 
+                fast, secure, and scalable applications.
               </p>
               <p className="text-gray-300 mb-4 text-lg leading-relaxed">
-                My interests extend beyond coding - I&apos;m deeply involved in sports, 
-                particularly basketball, which I&apos;ve played both professionally and at 
-                an amateur level. It has taught me tremendous discipline and responsibility—to 
-                face everything head-on and fight through whatever comes my way. This mindset 
-                translates perfectly into my approach to development challenges.
+                What sets us apart is our commitment to understanding our clients' needs and translating 
+                them into effective digital solutions. Whether it's a corporate website, e-commerce platform, 
+                or custom web application, we ensure each project receives the attention to detail it deserves.
               </p>
               <p className="text-gray-300 text-lg leading-relaxed mb-8">
-                I&apos;m also passionate about cooking and 3D modeling, which connect with my 
-                love for design. These creative outlets have enhanced my ability to think 
-                outside the box when designing digital experiences. In fact, my journey into 
-                3D modeling began with 3D printing and naturally evolved into UI/UX design. 
-                This diverse background allows me to bring unique perspectives to every project, 
-                often revealing design possibilities you might not have considered.
+                Based in Slovakia, we serve clients both locally and internationally, bringing our expertise 
+                in modern web development, responsive design, and user experience to every project. Our 
+                portfolio showcases our ability to create diverse digital solutions that meet and exceed 
+                our clients' expectations.
               </p>
               <div className="flex flex-col sm:flex-row gap-6 text-gray-300 text-lg">
                 <div className="flex items-center gap-2">
@@ -106,28 +100,10 @@ export default function Home() {
                 </div>
                 <div className="flex items-center gap-2">
                   <svg className="w-5 h-5 text-[var(--accent-green)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-                  </svg>
-                  <span>SPŠE Zochova</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <svg className="w-5 h-5 text-[var(--accent-green)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
-                  <span>Open for Freelance Work</span>
+                  <span>Professional Web Development</span>
                 </div>
-              </div>
-            </div>
-            <div className="order-1 md:order-2 flex justify-center">
-              <div className="relative w-80 h-[32rem] rounded-2xl overflow-hidden border-2 border-[var(--accent-green)] shadow-lg shadow-[var(--accent-green)]/10">
-                <Image
-                  src="/images/profile.jpg"
-                  alt="Andrej Paulicka"
-                  fill
-                  priority
-                  style={{ objectFit: 'cover', objectPosition: 'center' }}
-                  className="hover:scale-105 transition-transform duration-300"
-                />
               </div>
             </div>
           </div>
@@ -137,13 +113,20 @@ export default function Home() {
       {/* Skills Section */}
       <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-900/50 relative z-10">
         <div className="max-w-6xl mx-auto">
-          <h2 className="section-title text-center">Skills</h2>
+          <h2 className="section-title text-center">Our Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Frontend Development */}
+            {/* Web Development */}
             <div className="card">
-              <h3 className="text-2xl font-semibold mb-4 text-[var(--accent-green)]">Frontend Development</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-[var(--accent-green)]">Web Development</h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                {['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Next.js'].map((skill) => (
+                {[
+                  'Next.js',
+                  'React',
+                  'TypeScript',
+                  'Node.js',
+                  'Tailwind CSS',
+                  'Responsive Design'
+                ].map((skill) => (
                   <div key={skill} className="flex items-center gap-2 text-gray-300">
                     <svg className="w-4 h-4 text-[var(--accent-green)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
@@ -154,11 +137,18 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Backend Development */}
+            {/* E-commerce Solutions */}
             <div className="card">
-              <h3 className="text-2xl font-semibold mb-4 text-[var(--accent-green)]">Backend Development</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-[var(--accent-green)]">E-commerce Solutions</h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                {['Node.js', 'Python', 'MongoDB', 'SQL'].map((skill) => (
+                {[
+                  'Online Stores',
+                  'Payment Integration',
+                  'Inventory Management',
+                  'Shopping Cart',
+                  'Order Processing',
+                  'Customer Portal'
+                ].map((skill) => (
                   <div key={skill} className="flex items-center gap-2 text-gray-300">
                     <svg className="w-4 h-4 text-[var(--accent-green)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
@@ -169,11 +159,18 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Design */}
+            {/* UI/UX Design */}
             <div className="card">
-              <h3 className="text-2xl font-semibold mb-4 text-[var(--accent-green)]">Design</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-[var(--accent-green)]">UI/UX Design</h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                {['Photoshop', 'Figma', 'Illustrator', 'Adobe XD', 'Fusion 360'].map((skill) => (
+                {[
+                  'User Research',
+                  'Wireframing',
+                  'Prototyping',
+                  'Visual Design',
+                  'User Testing',
+                  'Design Systems'
+                ].map((skill) => (
                   <div key={skill} className="flex items-center gap-2 text-gray-300">
                     <svg className="w-4 h-4 text-[var(--accent-green)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
@@ -184,11 +181,18 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Others */}
+            {/* Business Solutions */}
             <div className="card">
-              <h3 className="text-2xl font-semibold mb-4 text-[var(--accent-green)]">Operating Systems</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-[var(--accent-green)]">Business Solutions</h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                {['Linux', 'Windows', 'macOS'].map((skill) => (
+                {[
+                  'Custom Web Apps',
+                  'API Development',
+                  'Database Design',
+                  'Cloud Solutions',
+                  'Performance Optimization',
+                  'SEO & Analytics'
+                ].map((skill) => (
                   <div key={skill} className="flex items-center gap-2 text-gray-300">
                     <svg className="w-4 h-4 text-[var(--accent-green)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
@@ -205,24 +209,60 @@ export default function Home() {
       {/* Projects Section */}
       <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-6xl mx-auto">
-          <h2 className="section-title text-center">Projects</h2>
+          <h2 className="section-title text-center">Our Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {[1, 2, 3, 4].map((project) => (
-              <div key={project} className="card">
+            <div className="card overflow-hidden">
+              <div className="relative w-full h-48 mb-4 rounded-t-lg overflow-hidden">
+                <Image
+                  src="/images/natus-volare.jpg"
+                  alt="Natus Volare Website Preview"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2 text-[var(--accent-green)]">
-                  Project {project}
+                  Natus Volare
                 </h3>
                 <p className="text-gray-400 mb-4">
-                  A brief description of the project and the technologies used.
+                  A modern website for a drone services company, featuring dynamic animations and a responsive design. 
+                  Built with Next.js and modern web technologies.
                 </p>
                 <div className="flex gap-4">
-                  <button className="btn-primary">View Project</button>
-                  <button className="text-[var(--accent-green)] hover:underline">
+                  <a href="https://misk0o.github.io/Natus-Volare/" target="_blank" rel="noopener noreferrer" className="btn-primary">
+                    View Project
+                  </a>
+                  <a href="https://github.com/misk0o/Natus-Volare" target="_blank" rel="noopener noreferrer" className="text-[var(--accent-green)] hover:underline">
                     Source Code
-                  </button>
+                  </a>
                 </div>
               </div>
-            ))}
+            </div>
+
+            <div className="card overflow-hidden">
+              <div className="relative w-full h-48 mb-4 rounded-t-lg overflow-hidden">
+                <Image
+                  src="/images/karin-art.jpg"
+                  alt="Karin Art Tattoo Website Preview"
+                  fill
+                  className="object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2 text-[var(--accent-green)]">
+                  Karin Art Tattoo
+                </h3>
+                <p className="text-gray-400 mb-4">
+                  A professional portfolio website for a tattoo artist, showcasing artwork and services. 
+                  Features a clean, artistic design with smooth animations and intuitive navigation.
+                </p>
+                <div className="flex gap-4">
+                  <a href="https://www.karinart.sk" target="_blank" rel="noopener noreferrer" className="btn-primary">
+                    View Project
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
