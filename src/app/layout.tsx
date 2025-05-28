@@ -8,8 +8,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "NextLayer Studio | Modern Web Development",
-  description: "NextLayer Studio - Crafting modern web experiences with cutting-edge technology. Professional web development, e-commerce solutions, and custom web applications.",
+  title: "Andrej Paulicka - Portfolio",
+  description: "Full-Stack Developer & UI Designer Portfolio",
 };
 
 export default function RootLayout({
